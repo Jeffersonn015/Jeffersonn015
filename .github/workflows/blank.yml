@@ -27,14 +27,14 @@ jobs:
 
     # Os passos representam uma sequência de tarefas que serão executadas como parte do trabalho
     steps:
-      - name: Clonar repositório
+      - name: Jeffersonn015
         uses: actions/checkout@v3
     
       - name: Gerar os arquivos da cobra em './dist/'
-        uses: Platane/snk@v3
+        uses: Jeffersonn015/snk@v3
         id: snake-gif
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: Jeffersonn015
           outputs: |     
             dist/github-contribution-grid-snake.gif
             dist/github-contribution-grid-snake.svg
