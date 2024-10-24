@@ -1,36 +1,36 @@
-# GitHub Action for generating a contribution graph with a snake eating your contributions.
+# GitHub Action para gerar um gráfico de contribuições com uma cobra comendo suas contribuições.
 
-# ![snake gif](https://github.com/your-user-name/your-user-name/blob/output/github-contribution-grid-snake.gif)
+# ![gif da cobra](https://github.com/your-user-name/your-user-name/blob/output/github-contribution-grid-snake.gif)
 
 name: Generate Snake
 
-# Controls when the action will run.
+# Controla quando a ação será executada.
 on:
   schedule:
-      # every 12 hours
+      # a cada 12 horas
     - cron: "0 */12 * * *"
 
-  # This command allows us to run the Action automatically from the Actions tab.
+  # Este comando permite executar a Ação automaticamente a partir da aba Actions.
   workflow_dispatch:
   
-  # Also run on every push on the master branch
+  # Também executar em cada push no branch principal
   push:
     branches:
     - main
 
-# The sequence of runs in this workflow:
+# A sequência de execuções neste fluxo de trabalho:
 jobs:
-  # This workflow contains a single job called "build"
+  # Este fluxo de trabalho contém um único trabalho chamado "build"
   build:
-    # The type of runner that the job will run on
+    # O tipo de runner que o trabalho será executado
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Os passos representam uma sequência de tarefas que serão executadas como parte do trabalho
     steps:
-      - name: Clone repo
+      - name: Clonar repositório
         uses: actions/checkout@v3
     
-      - name: Generate the snake files in './dist/'
+      - name: Gerar os arquivos da cobra em './dist/'
         uses: Platane/snk@v3
         id: snake-gif
         with:
@@ -41,14 +41,15 @@ jobs:
         env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Show build status
+      - name: Mostrar status da construção
         run: git status
 
-      - name: Push new files to the output branch
+      - name: Enviar novos arquivos para o branch de saída
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          commit_message: Update snake animations
+          commit_message: Atualizar animações da cobra
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
