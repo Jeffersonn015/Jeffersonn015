@@ -1,6 +1,6 @@
 ## Hi there 👋
 
- ![snake gif](https://github.com/your-user-name/jeffersonn015your-user-name/blob/output/github-contribution-grid-snake.gif)
+![snake gif](https://github.com/your-user-name/Jeffersonn015your-user-name/blob/output/github-contribution-grid-snake.gif)
  
 <!--
 **Jeffersonn015/Jeffersonn015** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
