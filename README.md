@@ -1,4 +1,4 @@
-# Olá, sou um Estudante de Análise e Desenvolvimento de Sistemas
+# Olá, me chamo Jefferson
 
 ## Sobre Mim
 Sou estudante de **Análise e Desenvolvimento de Sistemas** e estou em constante busca por aprimorar meus conhecimentos na área de tecnologia. Atualmente, estou me dedicando a aprender e aplicar habilidades em programação, desenvolvimento de software e gerenciamento de sistemas.
